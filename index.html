@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Glass Contact Form</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .glass-form {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+      padding: 30px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #fff;
+    }
+
+    .glass-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .glass-form label {
+      margin-top: 10px;
+      display: block;
+      font-weight: 500;
+    }
+
+    .glass-form input,
+    .glass-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border-radius: 8px;
+      border: none;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-size: 14px;
+      backdrop-filter: blur(5px);
+    }
+
+    .glass-form input::placeholder,
+    .glass-form textarea::placeholder {
+      color: #eee;
+    }
+
+    .glass-form button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .glass-form button:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <form class="glass-form" action="https://formsubmit.co/samuelabayomi1621@gmail.com" method="POST">
+    <h2>Package Delivery Form</h2>
+
+    <label for="name">Full Name</label>
+    <input type="text" name="Name" id="name" placeholder="Enter your name" required>
+
+    <label for="address">Address</label>
+    <input type="text" name="Address" id="address" placeholder="Your address" required>
+
+    <label for="package">Package</label>
+    <input type="text" name="Package" id="package" placeholder="Type of package" required>
+
+    <label for="date">Date</label>
+    <input type="date" name="Date" id="date" required>
+
+    <label for="explanation">Explain More</label>
+    <textarea name="Explanation" id="explanation" rows="4" placeholder="Additional details" required></textarea>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://thankyou-page.com">
+
+    <button type="submit">Send Message</button>
+  </form>
+
+</body>
+    </html>
